@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 @SuppressWarnings("unused")
-public class Waits {
+public class ImplicitWait {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
@@ -54,7 +54,6 @@ public class Waits {
 		String wrongPromoCode = driver.findElement(By.className("promoInfo")).getText();
 		System.out.println(wrongPromoCode);
 		Assert.assertEquals(wrongPromoCode, "Invalid code ..!");
-		
 		
 
 	}
