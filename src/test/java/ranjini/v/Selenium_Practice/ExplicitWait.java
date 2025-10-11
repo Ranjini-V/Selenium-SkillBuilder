@@ -50,7 +50,6 @@ public class ExplicitWait {
 		driver.findElement(By.xpath("//button[@class='promoBtn']")).click();
 		
 		// ExplicitWait
-		// WebElement wrongPromoCode = driver.findElement(By.className("promoInfo"));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("promoInfo")));
 		String wrongPromoCode = driver.findElement(By.className("promoInfo")).getText();
 		System.out.println(wrongPromoCode);
