@@ -29,7 +29,9 @@ public class Scope {
 		// get count of links in the first column of the footer
 		WebElement columnDriver = footerDriver.findElement(By.xpath("//div[@id='gf-BIG']//td[1]/ul"));
 		List<WebElement> footerColumnOneLinks = columnDriver.findElements(By.tagName("a"));
-		System.out.println("Number of links in the first column of footer: " + footerColumnOneLinks);
+		System.out.println("Number of links in the first column of footer: " + footerColumnOneLinks.size());
+
+		driver.quit();
 
 	}
 
