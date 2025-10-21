@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class Tables {
 
@@ -16,14 +17,22 @@ public class Tables {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
 		List<WebElement> tableValues = driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)"));
-		int amountSum = 0;
+		int actualSum = 0;
 
 		for (int i = 0; i < tableValues.size(); i++) {
-			amountSum = amountSum + Integer.parseInt(tableValues.get(i).getText());
+			actualSum = actualSum + Integer.parseInt(tableValues.get(i).getText());
 
 		}
 
-		System.out.println("The amountSum from the table is:" + amountSum);
+		System.out.println("The actualSum calculated from the table is:" + actualSum);
+
+		// compare actual and expected amountSum
+		int expectedSum = Integer
+				.parseInt(driver.findElement(By.className("totalAmount")).getText().split(":")[1].trim());
+		Assert.assertEquals(expectedSum, actualSum);
+
+		System.out.println("The expectedSum from the UI is: " + expectedSum);
+
 	}
 
 }
