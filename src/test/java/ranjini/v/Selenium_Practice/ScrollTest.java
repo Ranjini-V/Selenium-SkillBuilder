@@ -19,7 +19,6 @@ public class ScrollTest {
 		// scroll through DOM object - write in browser console to find co-ordinate
 		js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000");
 		
-		
 		driver.quit();
 			
 	}
