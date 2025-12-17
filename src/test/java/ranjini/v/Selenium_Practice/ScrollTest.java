@@ -17,6 +17,7 @@ public class ScrollTest {
 		js.executeScript("window.scrollBy(0,500)");
 		
 		// scroll through DOM object - write in browser console to find co-ordinate
+		// This line of code tells Selenium to run JavaScript that scrolls the element with class tableFixHead down by 5000 pixels
 		js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000");
 		
 		driver.quit();
