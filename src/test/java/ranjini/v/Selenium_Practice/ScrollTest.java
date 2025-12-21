@@ -20,6 +20,9 @@ public class ScrollTest {
 		// This line of code tells Selenium to run JavaScript that scrolls the element with class tableFixHead down by 5000 pixels
 		js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000");
 		
+		// scroll into view for an element
+		//js.executeScript("arguments[0].scrollIntoView(true);", element);
+		
 		driver.quit();
 			
 	}
