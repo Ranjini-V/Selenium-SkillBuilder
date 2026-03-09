@@ -1,10 +1,10 @@
-# Selenium-SkillBuilder 🚀
+# Selenium-SkillBuilder
 
 A production-grade UI test automation framework built with **Selenium WebDriver** and **Java**, demonstrating real-world implementation of the **Page Object Model (POM)** design pattern, reusable utilities, and data-driven testing.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -16,7 +16,7 @@ A production-grade UI test automation framework built with **Selenium WebDriver*
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Selenium-SkillBuilder/
@@ -34,7 +34,7 @@ Selenium-SkillBuilder/
 
 ---
 
-## ✅ Key Features
+## Key Features
 
 - **Page Object Model (POM)** — Separation of test logic from UI locators for easy maintenance
 - **Reusable Utilities** — Common methods like browser setup, teardown, explicit waits, and screenshot capture
@@ -42,7 +42,7 @@ Selenium-SkillBuilder/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### Prerequisites
 - Java JDK 11+
@@ -65,7 +65,7 @@ mvn test -DsuiteXmlFile=testng.xml
 
 
 
-## 💡 Concepts Demonstrated
+## Concepts Demonstrated
 
 - Explicit and implicit waits
 - TestNG annotations (`@BeforeMethod`, `@AfterMethod`, `@DataProvider`)
@@ -73,7 +73,7 @@ mvn test -DsuiteXmlFile=testng.xml
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Ranjini V** — QA Automation Engineer  
 [GitHub](https://github.com/Ranjini-V)
