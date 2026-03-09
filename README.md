@@ -36,9 +36,9 @@ Selenium-SkillBuilder/
 
 ## Key Features
 
-- **Page Object Model (POM)** — Separation of test logic from UI locators for easy maintenance
-- **Reusable Utilities** — Common methods like browser setup, teardown, explicit waits, and screenshot capture
-- **Cross-browser Ready** — Configurable to run on Chrome, Firefox, and Edge
+- **Page Object Model (POM)** - Separation of test logic from UI locators for easy maintenance
+- **Reusable Utilities** - Common methods like browser setup, teardown, explicit waits, and screenshot capture
+- **Cross-browser Ready** - Configurable to run on Chrome, Firefox, and Edge
 
 ---
 
@@ -63,8 +63,6 @@ mvn test
 mvn test -DsuiteXmlFile=testng.xml
 ```
 
-
-
 ## Concepts Demonstrated
 
 - Explicit and implicit waits
@@ -75,5 +73,5 @@ mvn test -DsuiteXmlFile=testng.xml
 
 ## Author
 
-**Ranjini V** — QA Automation Engineer  
+**Ranjini V** - QA Automation Engineer  
 [GitHub](https://github.com/Ranjini-V)
